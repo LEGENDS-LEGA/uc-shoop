@@ -50,7 +50,7 @@ async def photo(_,msg):
     await asyncio.sleep(5*60)
     if msg.from_user.id not in replyd:
         await app.send_message(msg.chat.id, "Սպասեք 5-ր " )
-        await app.send_message( MOD , f"xi ches patasxanum ARA: {msg.from_user.id}")
+        await app.send_message( MOD , f"Patasxani exoos: {msg.from_user.id}")
         await app.send_message( MOD , f"**User link:**{msg.from_user.mention}\nIf link upper doesnt work try username: {msg.from_user.username}\nThis is Users id, if links isnt working: {msg.from_user.id}")
 
 
@@ -81,17 +81,37 @@ async def reply_mod(_,msg):
 
 @app.on_message(filters.command("uc_legends" , prefixes="/"))
 async def uc_message(_,msg):
-    prices = """💰 30UC - 180֏ ☄️\n
-💰 60UC - 390֏ ☄️\n
-💰 120UC - 780֏ ☄️\n
-💰 180UC - 1200֏ ☄️\n
-💰 240UC - 1580֏ ☄️\n
-💰 325UC - 1750֏ ☄️\n
-💰 660UC - 3400֏ ☄️\n
-💰 1800UC - 8400֏ ☄️\n
-💰 3850UC - 16800֏ ☄️\n
-💰 4000UC - 18500֏ ☄️\n
-💰 8100UC - 34500֏ ☄️\n\n   
+    prices = """
+✅30💰 - 200֏ 🔥
+    
+✅60💰 - 400֏ 🔥
+
+✅120💰 - 800֏ 🔥
+
+✅180💰 - 1100֏ 🔥
+
+✅240💰 - 1400֏ 🔥
+
+✅325💰 - 1800֏ 🔥
+
+✅660💰 - 3500֏ 🔥
+    
+✅720💰 - 3700֏ 🔥
+ 
+✅1800💰 - 8500֏ 🔥
+
+✅1950💰 - 9000֏ 🔥
+
+✅3850💰 - 17000֏  🔥
+
+✅4000💰 - 17500֏  🔥
+
+✅5650💰 - 26500֏  🔥
+
+✅8100💰 - 33000֏  🔥
+
+✅8400💰 - 34000֏ 🔥
+  
 🛒 Մեր բանկային հաշիվները իմանալու համար սեղմեք այս հրամանին /legends\n
 ՈՒշադրություն /ID ուղարկեք նկարի հետ\n"""
 
